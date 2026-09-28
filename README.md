@@ -99,3 +99,7 @@ python -m unittest discover tests
 ## aadddd on aje
 ```kalo gabisa env nya, tambah (venv gajalan karena ga as admin)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+## Install by pyip
+```easier way, karena udah jadi library
+```pip install continetal-sysmon==0.1.0```
