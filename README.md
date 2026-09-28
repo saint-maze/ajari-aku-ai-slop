@@ -95,3 +95,7 @@ or via unittest:
 ```bash
 python -m unittest discover tests
 ```
+
+## aadddd on aje
+```kalo gabisa env nya, tambah (venv gajalan karena ga as admin)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
