@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=65.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sysmon-cli"
+version = "0.1.0"
+description = "Cross-platform Python CLI system monitor and developer tool"
+readme = "README.md"
+authors = [{ name = "Developer" }]
+requires-python = ">=3.8"
+dependencies = [
+    "psutil>=5.9.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+sysmon = "sysmon_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sysmon_cli*"]
+exclude = ["tests*", "sysmon_cli.tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
